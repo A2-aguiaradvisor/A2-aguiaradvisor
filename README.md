@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="banner-vinicius-aguiar.png" alt="Vinicius Aguiar — Fundador & CEO Aguiar Advisory" width="100%"/>
+<img src="Capa Git.png" alt="Vinicius Aguiar — Fundador & CEO Aguiar Advisory" width="100%"/>
 
 # Vinicius Furtado de Aguiar
 
