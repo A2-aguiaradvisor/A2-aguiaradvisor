@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "as_of": "2026-11-09",
+    "market_reference_session": "2026-11-06",
+    "market_price_adjustment": "Preços sem reinvestimento de dividendos",
+    "currency": "BRL",
+    "status": "MVP DOCUMENTAL / não é recomendação",
+    "disclaimer": "Métricas de lucro gerencial são definidas por cada emissor; nunca equiparar automaticamente com IFRS17/CPC50."
+  },
+  "securities": {
+    "BBSE3": {
+      "issuer": "BB Seguridade Participações S.A.",
+      "share_class": "ON",
+      "close_brl": 38.24,
+      "market_cap_brl": 74240000000,
+      "pe_ttm_reference": 8.1,
+      "dividends_per_share_12m_brl": 4.59,
+      "price_return_12m_percent": 11.7,
+      "price_source": "COTA_B3_COMPARE",
+      "dividend_source": "COTA_B3_COMPARE",
+      "fundamental_sources": [
+        "BB_RI_3T26",
+        "BB_RI_DIVIDENDS"
+      ],
+      "quarterly": {
+        "2025Q3": {
+          "managerial_recurring_net_income_brl_million": 2561.929,
+          "source": "BB_RI_3T26"
+        },
+        "2026Q2": {
+          "managerial_recurring_net_income_brl_million": 2151.702,
+          "source": "BB_RI_3T26"
+        },
+        "2026Q3": {
+          "managerial_recurring_net_income_brl_million": 2432.098,
+          "source": "BB_RI_3T26"
+        }
+      },
+      "notes": "Lucro gerencial recorrente, não lucro IFRS17. Em 3T26, Brasilseg e BB Corretora pressionaram resultado; receitas financeiras da holding compensaram parcialmente."
+    },
+    "CXSE3": {
+      "issuer": "Caixa Seguridade Participações S.A.",
+      "share_class": "ON",
+      "close_brl": 20.5,
+      "market_cap_brl": 61500000000,
+      "pe_ttm_reference": 14.3,
+      "dividends_per_share_12m_brl": 1.38,
+      "price_return_12m_percent": 35.3,
+      "price_source": "COTA_B3_COMPARE",
+      "dividend_source": "COTA_B3_COMPARE",
+      "fundamental_sources": [
+        "CXSE_OFFICIAL_2T26",
+        "CXSE_RI_DIVIDENDS",
+        "CXSE_RI_CALENDAR"
+      ],
+      "quarterly": {
+        "2026Q2": {
+          "managerial_recurring_net_income_brl_million": 1140,
+          "reported_ifrs17_net_income_brl_million": 1160,
+          "managerial_roe_ttm_pct": 70.9,
+          "issued_insurance_premiums_brl_million": 2490,
+          "source": "CXSE_OFFICIAL_2T26"
+        },
+        "2026Q3": {
+          "managerial_recurring_net_income_brl_million": null,
+          "source": null,
+          "publication_status": "scheduled_2026-11-09_not_verified_as_published"
+        }
+      },
+      "notes": "No 2T26, habitação, previdência e capitalização foram vetores de crescimento; resultado contábil CPC50 não deve ser confundido com lucro gerencial CPC11."
+    }
+  },
+  "sources": {
+    "COTA_B3_COMPARE": {
+      "url": "https://www.cotab3.com.br/comparar/BBSE3-CXSE3",
+      "type": "market_comparison_secondary",
+      "period": "2026-11-06",
+      "note": "Snapshot secundário; validar contra feed licenciado para operação comercial"
+    },
+    "BRAPI_MCP_QUOTE": {
+      "url": "https://brapi.dev/docs",
+      "type": "API",
+      "period": "2026-11-09",
+      "note": "Conectado, mas plano gratuito restringe dividendos, históricos longos e balanços. Valores de 09/11 mantidos separados do fechamento de 06/11."
+    },
+    "BB_RI_3T26": {
+      "url": "https://www.bbseguridaderi.com.br/servicos-aos-acionistas/central-de-downloads",
+      "type": "issuer_release",
+      "period": "2026Q3",
+      "published": "2026-11-03",
+      "title": "Análise de Desempenho – 3T26",
+      "supporting_html": "https://financialfilings.com/filings/bb-seguridade-participacoes-sa/interim-quarterly-report/2026/75462520/"
+    },
+    "BB_RI_DIVIDENDS": {
+      "url": "https://www.bbseguridaderi.com.br/servicos-aos-acionistas/dividendos-e-recompras",
+      "type": "issuer_history",
+      "period": "through 2026-11-09"
+    },
+    "CXSE_OFFICIAL_2T26": {
+      "url": "https://caixanoticias.caixa.gov.br/Paginas/Not%C3%ADcias/2026/08-AGOSTO/CAIXA-Seguridade-registra-lucro-de-RS-114-bilhao-no-2T26.aspx",
+      "type": "issuer_release",
+      "period": "2026Q2",
+      "published": "2026-08-10"
+    },
+    "CXSE_RI_DIVIDENDS": {
+      "url": "https://www.ri.caixaseguridade.com.br/informacoes-aos-investidores/historico-de-dividendos-2/",
+      "type": "issuer_history",
+      "period": "through 2026-11-09"
+    },
+    "CXSE_RI_CALENDAR": {
+      "url": "https://www.ri.caixaseguridade.com.br/",
+      "type": "issuer_calendar",
+      "period": "2026Q3",
+      "note": "Resultado 3T26 agendado para 2026-11-09; aguardando verificação do documento na captura"
+    }
+  }
+}
